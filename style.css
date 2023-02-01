@@ -5,6 +5,8 @@
 
 .work {
     background-color: red;
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -75,6 +77,33 @@
     grid-template-columns: repeat(4, 3fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+}
+
+.workText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: -220px;
+
+}
+
+#workBefor {
+    position: relative;
+}
+
+#workBefor:after {
+    position: absolute;
+    content: "...";
+    top: -15px;
+    left: 290px;
+    font-size: 30px;
+    transition: all 1000ms;
+}
+
+#workBefor:hover:after {
+
+    font-size: 32px;
+    color: blueviolet;
 }
 
 
