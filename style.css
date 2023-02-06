@@ -1,114 +1,131 @@
-.play {
-    background-color: blue;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
 }
 
+.play {
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+}
 
 .work {
-    background-color: red;
-    display: flex;
-    justify-content: space-around;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
 }
-
 
 .SelfCar {
-    background-color: yellow;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-around;
 }
-
 
 .exercise {
-    background-color: violet;
+  background-color: violet;
+  display: flex;
+  justify-content: space-around;
 }
-
 
 .social {
-    background-color: darkgoldenrod;
+  background-color: darkgoldenrod;
+  display: flex;
+  justify-content: space-around;
 }
 
-
 .study {
-    background-color: gold;
-
-
+  background-color: gold;
+  display: flex;
+  justify-content: space-around;
 }
 
 .user {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    background-color: aqua;
-    grid-column: 1;
-    grid-row: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  background-color: aqua;
+  grid-column: 1;
+  grid-row: 1 / 3;
 }
 
-
 .user-nav {
-
-    background-color: yellow;
-    height: 200px;
-
+  background-color: yellow;
+  height: 200px;
 }
 
 .user-nav li {
-    list-style: none;
-    padding-top: 20px;
-
+  list-style: none;
+  padding-top: 20px;
 }
 
 .user-name {
-
-    height: 400px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    padding-left: 40px;
-
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-left: 40px;
 }
 
 .user-logo img {
-    width: 100px;
-    border: aliceblue solid 3px;
-    border-radius: 50%;
+  width: 100px;
+  border: aliceblue solid 3px;
+  border-radius: 50%;
 }
-
 
 .container {
-
-    display: grid;
-    grid-template-columns: repeat(4, 3fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
-.workText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: -220px;
-
+.workText,
+.playText,
+.studyText,
+.exerciseText,
+.socialText,
+.SelfCarText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: -150px;
 }
 
-#workBefor {
-    position: relative;
+#workBefor,
+#playBefor,
+#studyBefor,
+#socialBefor,
+#exerciseBefor,
+#SelfCarBefor {
+  position: relative;
 }
 
-#workBefor:after {
-    position: absolute;
-    content: "...";
-    top: -15px;
-    left: 290px;
-    font-size: 30px;
-    transition: all 1000ms;
+#workBefor:after,
+#playBefor:after,
+#studyBefor:after,
+#socialBefor:after,
+#exerciseBefor:after,
+#SelfCarBefor:after {
+  position: absolute;
+  content: "...";
+  top: -15px;
+  left: 290px;
+  font-size: 30px;
+  transition: all 1000ms;
 }
 
-#workBefor:hover:after {
-
-    font-size: 32px;
-    color: blueviolet;
+#workBefor:hover:after,
+#playBefor:hover:after,
+#studyBefor:hover:after,
+#exerciseBefor:hover:after,
+#socialBefor:hover:after,
+#SelfCarBefor:hover:after {
+  font-size: 32px;
+  color: blueviolet;
 }
 
-
-
-
-
-
-
+.Big {
+  font-size: 2rem;
+  font-weight: 700;
+}
